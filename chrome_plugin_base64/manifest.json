@@ -28,5 +28,5 @@
    "name": "Base64编解码",
    "offline_enabled": true,
    "permissions": [ "contextMenus", "tabs", "http://*/", "https://*/" ],
-   "version": "1.0.0.0"
+   "version": "1.0.0.1"
 }
