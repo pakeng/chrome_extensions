@@ -1,1 +1,86 @@
-﻿body{margin:10px;color:#000;background-color:#fafafa;width:500px}#error{color:#c00000;text-align:center;margin-bottom:10px}.btn{width:160px}
+﻿body{
+    margin:10px;
+    color:#000;
+    background-color:#fafafa;
+    width:500px
+}
+
+#error{
+    color:#c00000;
+    text-align:center;
+    margin-bottom:10px
+}
+
+.btn{width:160px}
+
+#qr_content {
+    position: relative;
+}
+#qr_content #qrcode {
+    background: #fff;
+    padding: 6px;
+}
+#qr_content #favicon {
+    display: none;
+    opacity: .95;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+    margin-left: -12px;
+    margin-top: -12px;
+    border-radius: 3px;
+}
+
+#short_url_div {
+    position: absolute;
+    left: 0px;
+    height: 35px;
+}
+
+#short_url {
+    padding: 5px;
+    width: 100%;
+    font: 100% arial;
+    border: 1px solid #E5E5DB;
+    background: #FFF;
+    color: #47433F;
+    height: 10px;
+    line-height: 15px;
+}
+
+.qr_right{
+    box-sizing: border-box;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 240px;
+    overflow-y: overlay;
+    overflow-x: hidden;
+    clear: both;
+    width: 100%;
+    color: #717592;
+}
+
+.qr_left{
+    margin-left:0px;
+    position: absolute;
+    box-sizing: border-box;
+    width: 220px;
+}
+
+.output-image-block{
+    display:block;
+    width:205px;
+    height:205px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    box-shadow:2px 2px 4px #888888!important;
+}
+
+#qr_encode{
+    margin-top: 20px;
+}

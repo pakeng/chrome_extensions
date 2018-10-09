@@ -6,17 +6,68 @@
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 <link rel="stylesheet" href="css/popup.min.css" type="text/css" />
 <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/base64.min.js"></script>
 <script src="js/popup.min.js"></script>
+<script src="js/lib/qr_popup.js"></script>
+<script src="js/lib/qr_code_option.js"></script>
+<script src="js/lib/zxing.min.js"></script>
+<script src="js/lib/qrgen.min.js"></script>
 
 </head>
 <body>
-    <b>Base64编解码:</b>
-    <textarea id="Source" rows="10" class="input-block-level"></textarea>
-    <div id="error"></div>
-    <div style="text-align:center;">
-        <button class="btn" data-action="Encode">Base64 Encode</button>
-        <button class="btn" data-action="Decode">Base64 Decode</button>
+    <div class="content" style="margin:10px">
+        <ul id="myTab" class="nav nav-tabs">
+            <li class="active"><a href="#base64" data-toggle="tab">Base64</a></li>
+            <li><a href="#qrcode" data-toggle="tab">QrCode</a></li>
+            <li><a href="#about" data-toggle="tab">About</a></li>
+            <li class="dropdown">
+                <a href="#" id="myTabDrop1" class="dropdown-toggle"
+                data-toggle="dropdown">Other
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+                    <li><a href="#one" tabindex="-1" data-toggle="tab">one</a></li>
+                    <li><a href="#tow" tabindex="-1" data-toggle="tab">tow</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="base64">
+                    <!-- Base64 start -->
+                    <b id="base64_name"></b>
+                    <textarea id="Source" rows="10" class="input-block-level"></textarea>
+                    <div id="error"></div>
+                    <div style="text-align:center;">
+                        <button class="btn" data-action="Encode">Base64 Encode</button>
+                        <button class="btn" data-action="Decode">Base64 Decode</button>
+                    </div>
+                    <!-- Base64 end -->
+            </div>
+            <div class="tab-pane fade" id="qrcode">
+                <p id="qr_name">QrCode!!!!</p>
+                <div rows="10" class="qr_left">
+                        <textarea id="qr_text_source" rows="10" class="input-block-level"></textarea>
+                        <div id="error"></div>
+                </div>
+                <div rows="10" class="qr_right">
+                    <img id="qrcode_img" rows="10" class="output-image-block" src="img/icon128.png"/>
+                </div>
+                <div style="text-align:center;">
+                        <button class="btn" id="qr_encode" >QR Encode</button>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="about">
+                    <p>这是一个工具插件，目前集成Base64和二维码生成功能。后续会添加更多功能例如MD5加密，URLEncode/URLDecode等。</p>
+                    <p>作者blog：<a target="_blank" href="https://pinode.cn">Vito's Blog</a></p>
+                </div>
+            <div class="tab-pane fade" id="one">
+                <p>测试功能1</p>
+            </div>
+            <div class="tab-pane fade" id="tow">
+                <p>测试功能2</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
