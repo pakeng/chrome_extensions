@@ -1,0 +1,29 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "img/icon19.png",
+         "38": "img/icon38.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Base64编解码"
+   },
+   "content_scripts": [ {
+      "js": [ "js/content.min.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Base64编解码",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "48": "img/icon48.png"
+   },
+   "manifest_version": 2,
+   "name": "Base64编解码",
+   "offline_enabled": true,
+   "permissions": [ "contextMenus", "tabs", "http://*/", "https://*/" ],
+   "version": "1.0.0.0"
+}
