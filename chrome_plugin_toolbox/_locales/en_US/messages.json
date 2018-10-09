@@ -1,0 +1,35 @@
+{
+   "copied": {
+      "message": "Copied. ^_^!"
+   },
+   "decode": {
+      "message": "Decode QRcode"
+   },
+   "extDesp": {
+      "message": "Simple QR Generator ( absolute locally and offline, no ads ) : any text/image/link in the page, and decode the qrcode which seleted, etc."
+   },
+   "extName": {
+      "message": "Simple QR Generator"
+   },
+   "generate": {
+      "message": "Generate QRcode"
+   },
+   "showDecodeText": {
+      "message": "The Content in QRcode is: "
+   },
+   "showQRcodeImg": {
+      "message": "QRcode Generated below: "
+   },
+   "textToLong": {
+      "message": "Content is Too long to be QRcoded ^_^!"
+   },
+   "waiting": {
+      "message": "Please wait..."
+   },
+   "Base64_name":{
+        "message":"Base64 Encode & Decode"
+    },
+    "qr_name":{
+        "message":"QRCODE Encode"
+    }
+}
