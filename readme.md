@@ -8,4 +8,6 @@
 名称|时间|作者|版本|是否上线|工程文件名称
 ----|----|----|----|----|----|
 Base64编解码|2018年10月8日|Vito|1.0.0.0|√|chrome_plugin_base64
+Base64编解码|2018年10月9日|Vito|1.0.0.1|√|更新到toolbox版本
+ToolBox|2018年10月9日|Vito|1.0.0.0|√|chrome_plugin_toolbox
 
